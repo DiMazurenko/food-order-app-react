@@ -4,7 +4,7 @@
 
 Application for ordering food. Implemented an order basket with an order form and validation. Menus and customer orders are stored on Firebase Realtime Database.
 
-App publushed
+App publushed https://lambent-marzipan-4ec248.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
