@@ -33,7 +33,7 @@ const Cart = (props) => {
   const submitOrderHandler = async (userData) => {
     setIsSubmitting(true);
     await fetch(
-      'https://lesson-e7547-default-rtdb.firebaseio.com/orders.json',
+      'https://food-order-app-606b8-default-rtdb.firebaseio.com/orders.json',
       {
         method: 'POST',
         body: JSON.stringify({ user: userData, orderedItems: cartCtx.items }),
@@ -84,7 +84,12 @@ const Cart = (props) => {
 
   const isSubmittingContent = <p>Sending order data...</p>;
 
-  const didSubmitContent = <p>GREAT</p>;
+  const didSubmitContent = (
+    <p>
+      Successfully! We have received your order and will contact you within 5
+      minutes!
+    </p>
+  );
 
   return (
     <Modal onClick={props.onHideCart}>
